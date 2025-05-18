@@ -1,0 +1,8 @@
+<h1>Today's Meals</h1>
+<ul>
+  {% for meal in meals %}
+    <li>{{ meal.name }} ({{ meal.meal_type }}) - {{ meal.calories }} kcal</li>
+  {% endfor %}
+</ul>
+<p><strong>Total Calories:</strong> {{ total_calories }}</p>
+<a href="/add/">Add a Meal</a>
